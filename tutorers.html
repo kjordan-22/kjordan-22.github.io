@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutors</title>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            body{
+                 min-height: 100vh;
+                 background:linear-gradient(#037185, #acffc1)
+            }
+           header{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                padding:30px 100px;
+                display:flex;
+                justify-content: space-between;
+                align-items:center;
+                z-index: 10000;
+            }
+            header .logo{
+            color:#fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size:2em;
+            text-transform: uppercase;
+            }
+            header ul{
+                display:flex;
+                justify-content: center;
+                align-content: center;
+            }
+            header ul li{
+                list-style: none;
+                margin-left: 20px;
+            }
+            header ul li a{
+                text-decoration: none;
+                padding:6px 15px;
+                color:#fff;
+                border-radius: 20px;
+            }
+            header ul li a:hover,
+            header ul li a.active{
+                background:#fff;
+                color:#2b1055;
+            }
+            img{
+                float:left;
+                height:10%;
+                width:10%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorers.html" class="active">Tutors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="chipmunks.html">Chipmunks</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="box"> 
+                <div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>   
+                <div class="content">
+                    <h3>Writing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                        ea officiis veniam  </p>
+                </div>  
+                </div> 
+                <div class="box">         
+                <div class="icon"><i class="fa fa-plus" aria-hidden="true"></i></div>   
+                <div class="content">
+                    <h3>Math</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                        ea officiis veniam  </p>
+                </div>  
+                </div> 
+                <div class="box"> 
+                <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>   
+                <div class="content">
+                    <h3>SAT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                        ea officiis veniam </p>
+                </div>  
+                </div> 
+                <div class="box"> 
+                <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>   
+                <div class="content">
+                    <h3>Other</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                        ea officiis veniam  </p>
+                </div>  
+                </div> 
+        </div>
+    </body>
+</html>
