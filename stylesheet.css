@@ -22,9 +22,9 @@ body{
     padding-right: 10%;
         
 }
+<!-- deleted the stroke color -->
 .step{
-    -webkit-text-fill-color: rgb(236, 108, 253);
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(71, 255, 255);
 }
 ul{
     padding:0;
