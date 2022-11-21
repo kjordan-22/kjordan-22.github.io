@@ -135,6 +135,9 @@
                 
             
             }
+            nav.black ul{
+                background:#000;
+            }
         
         
         </style>
@@ -200,6 +203,16 @@
                 btn.style.marginTop = value * 1.5 + 'px';
                 header.style.top = value * 0.5 + 'px';
             })
+        </script>
+        <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop()){
+                    $("nav").addClass("black");
+                }
+                else{
+                    $("nav").removeClass("black");
+                }    
+            });
         </script>
     </body>
 </html>
