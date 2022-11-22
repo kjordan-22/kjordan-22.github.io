@@ -59,6 +59,34 @@
                 height:10%;
                 width:10%;
             }
+            section{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                padding: 100px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            section::before{
+                content:'';
+                position:absolute;
+                bottom:0;
+                width:100%;
+                height:100px;
+                background: linear-gradient(to top,#13151f,transparent);
+                z-index: 1000;
+            }
+            section img{
+                position:absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                pointer-events: none;
+            }
         </style>
     </head>
     <body>
@@ -107,7 +135,32 @@
         </div>
 
 <!--Reading teachers start here-->
-
+<div class="sec" id="sec">
+    <h2>Get Connected In <span class="step">3</span> Easy Steps</h2>    
+    <div class="section">
+      <p>
+      <img id="imageone" src="one.png" alt="step one" >
+      <br><br>
+      <span class="step">Select a Tutor</span> Choose a tutor for the subject or subjects that you need help with.
+      </p>
+    </div>
+    
+    <div class="section">
+    <p>
+    <img id="imagetwo" src="two.png" alt="step two" >
+    <br><br>
+    <span class="step"> Get Help </span> Schedule an appointment and get the help you need.
+    </p>
+    </div>
+    
+    <div class="section">
+    <p>
+    <img id="imagethree" src="three.png" alt="step 3" >           
+    <br><br>
+    <span class="step" alt="step three"> Give Feedback </span> Let us know how it went.
+    </p>
+    </div>
+    </div>
      
 
 <!--Reading teachers ends here-->
