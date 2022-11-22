@@ -112,6 +112,13 @@
     transition: 0.5s;
     z-index:1;
 }
+.container .box:hover .icon{
+    top:20px;
+    left: calc(50% - 40px);
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
 .cup .box .icon .fa{
     position: absolute;
     top:50%;
@@ -134,7 +141,10 @@
     transition: 0.5s;
     opacity: 0;
 }
-
+.container .box:hover .content{
+    top:100px;
+    opacity: 1;
+}
 .cup .box .content h3{
     margin: 0 0 10px;
     padding: 0;
