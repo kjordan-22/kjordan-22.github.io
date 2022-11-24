@@ -132,6 +132,43 @@
             .box:hover{
                 transform: scale(1.1);
             }
+            /* box without scale */
+            .cup  .trim{
+                position: relative;
+                width: calc(300px - 30px);
+                height: calc(250px - 30px);
+                background: rgba(63, 66, 66, 0.247);
+                float: left;
+                margin: 15px;
+                box-sizing:border-box;
+                overflow: hidden;
+                border-radius: 10px;
+                z-index:1;
+            }            
+            .cup  .trim .content{
+                position: absolute;
+                top:100%;
+                height:calc(100% - 100px);
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                opacity: 0;
+                z-index:2;
+            }
+            .cup .trim .content h3{
+                position: absolute;
+                margin: 0 0 10px;
+                padding: 0;
+                color: #fff;
+                font-size:24px;
+                z-index:2;
+            }
+            .cup  .trim .content p{
+                margin: 0 ;
+                padding: 0;
+                color: #fff;
+            }
             /* change to relative if you want it to be centered */
             .more{
                 position: absolute;
@@ -215,7 +252,7 @@
             </ul>
         </header>
         <div class="container">
-            <div class="box"> 
+            <div class="trim"> 
                 <div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>   
                 <div class="content">
                     <h3>Reading</h3>
@@ -223,7 +260,7 @@
                         ea officiis veniam  </p>
                 </div>  
                 </div> 
-                <div class="box">         
+                <div class="trim">         
                 <div class="icon"><i class="fa fa-plus" aria-hidden="true"></i></div>   
                 <div class="content">
                     <h3>Math</h3>
@@ -231,7 +268,7 @@
                         ea officiis veniam  </p>
                 </div>  
                 </div> 
-                <div class="box"> 
+                <div class="trim"> 
                 <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>   
                 <div class="content">
                     <h3>SAT</h3>
@@ -239,7 +276,7 @@
                         ea officiis veniam </p>
                 </div>  
                 </div> 
-                <div class="box"> 
+                <div class="trim"> 
                 <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>   
                 <div class="content">
                     <h3>Other</h3>
