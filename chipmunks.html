@@ -4,16 +4,16 @@
         <title>Test</title>
         <link href="stylesheet.css" rel="stylesheet">
         <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                scroll-behavior: smooth;
-            }
-            body{
-                 min-height: 100vh;
-                 background:linear-gradient(#037185, #acecff)
-            }
+            /* *{ */
+                /* margin: 0; */
+                /* padding: 0; */
+                /* box-sizing: border-box; */
+                /* scroll-behavior: smooth; */
+            /* } */
+            /* body{ */
+                 /* min-height: 100vh; */
+                 /* background:linear-gradient(#037185, #acecff) */
+            /* } */
             header{
                 position:Sticky;
                 top:0;
@@ -57,6 +57,17 @@
                 height:10%;
                 width:10%;
             }
+            *{
+                box-sizing:border-box;
+            }
+            body{
+                background-color:#edeef6;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                min-height:100vh;
+                margin:0;
+            }
             .modal-container{
                 background-color: rgba(0, 0, 0, 0.3);
                 position: fixed;
@@ -75,36 +86,37 @@
             }
         </style>
     </head>
-    <body>
-        <header>
-            <img src="logo.png">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tutorers.html">Tutors</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="chipmunks.html" class="active">Chipmunks</a></li>
-            </ul>
-        </header>
-    </body>
+    <!-- <body> -->
+        <!-- <header> -->
+            <!-- <img src="logo.png"> -->
+            <!-- <ul> -->
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <!-- <li><a href="tutorers.html">Tutors</a></li> -->
+                <!-- <li><a href="resources.html">Resources</a></li> -->
+                <!-- <li><a href="chipmunks.html" class="active">Chipmunks</a></li> -->
+            <!-- </ul> -->
+        <!-- </header> -->
+    <!-- </body> -->
+    <button id="open">
+        Click me please
+      </button>
+      
+      <div class="modal-container" id="modal-container">
+          <div class="modal">
+               <h1>Modals are cool</h1>
+               <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Libero nesciunt voluptates laudantium saepe laborum provident,
+                temporibus culpa sed vero cumque necessitatibus, fugiat 
+                aspernatur harum aut mollitia, quia impedit animi est.
+               </p>
+               <button id="close">
+                  Close me
+               </button>
+          </div>
+      </div>
 </html>
-<button id="open">
-  Click me please
-</button>
 
-<div class="modal-container" id="modal-container">
-    <div class="modal">
-         <h1>Modals are cool</h1>
-         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Libero nesciunt voluptates laudantium saepe laborum provident,
-          temporibus culpa sed vero cumque necessitatibus, fugiat 
-          aspernatur harum aut mollitia, quia impedit animi est.
-         </p>
-         <button id="close">
-            Close me
-         </button>
-    </div>
-</div>
 
 
 
