@@ -453,24 +453,17 @@
                 </div>  
             </div> 
     </div> 
-    <button id="open">
+    <button class="button open-button">
         Click me please
       </button>
       
-      <div class="modal-container" id="modal_container">
-          <div class="modal">
-               <h1>Modals are cool</h1>
-               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Libero nesciunt voluptates laudantium saepe laborum provident,
-                temporibus culpa sed vero cumque necessitatibus, fugiat 
-                aspernatur harum aut mollitia, quia impedit animi est.
-               </p>
-               <button id="close">
-                  Close me
-               </button>
-          </div>
-      </div> 
+      <dialog class="modal" id="modal">
+        <h2>Modal</h2>
+        <p>ghfjyhgdbfgjtryyj jythrtyhy uytjetyjrtyhbyt utyrjfyj uyjr6t
+            tyjrtyhgnyhrtyjurn67tjn6rtyjut6uyt6uyikj8u6fybujn6utkjt6uk
+        </p>
+        <button class="button close-button">Close</button>
+      </dialog>
     <!-- third row ends -->
 <!-- <div class="sec" id="sec">
    
@@ -497,16 +490,16 @@
 
 <!--Reading teachers ends here-->
 <script>
-    const open =document.getElementById('open');          
-    const modal_container =document.getElementById('modal_container');
-    const close =document.getElementById('close');
+    const modal = document.querySelector('#modal');
+    const openModal = document.querySelector('.open-button');
+    const closeModal = document.querySelector('.close-button');
 
-    open.addEventListener('click', () =>{
-     modal_container.classList.add('show');
+    openModal.addEventListener('click', () => {
+    modal.showModal();
     })
 
-    close.addEventListener('click', () =>{
-     modal_container.classList.remove('show');
+    openModal.addEventListener('click', () => {
+    modal.close();
     })
    </script>
 </body>
