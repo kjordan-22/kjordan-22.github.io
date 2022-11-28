@@ -453,17 +453,18 @@
                 </div>  
             </div> 
     </div> 
-    <button open class="button open-button">
+    <button class="modal-btn">
         Click me please
       </button>
+
+      <div class="modal-bg">
+        <div class="modal">
+            <h2>It will be okay</h2>
+            <button>close</button>
+        </div>
+      </div>
       
-      <dialog class="modal" id="modal">
-        <h2>Modal</h2>
-        <p>ghfjyhgdbfgjtryyj jythrtyhy uytjetyjrtyhbyt utyrjfyj uyjr6t
-            tyjrtyhgnyhrtyjurn67tjn6rtyjut6uyt6uyikj8u6fybujn6utkjt6uk
-        </p>
-        <button class="button close-button">Close</button>
-      </dialog>
+      
     <!-- third row ends -->
 <!-- <div class="sec" id="sec">
    
@@ -490,16 +491,11 @@
 
 <!--Reading teachers ends here-->
 <script>
-    const modal = document.querySelector('#modal');
-    const openModal = document.querySelector('.open-button');
-    const closeModal = document.querySelector('.close-button');
+    var modalBtn = document.querySelector('.modal-btn');
+    var modalBg = document.querySelector('.modal-bg');
 
-    openModal.addEventListener('click', () => {
-    modal.showModal();
-    })
-
-    openModal.addEventListener('click', () => {
-    modal.close();
+    modalBtn.addEventListener('click',function(){
+        modalBg.classList.add(bg-active);
     })
    </script>
 </body>
