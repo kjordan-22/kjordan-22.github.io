@@ -3,6 +3,7 @@
     <head>
         <title>Test</title>
         <!-- <link href="stylesheet.css" rel="stylesheet"> -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
             /* *{ */
                 /* margin: 0; */
@@ -113,6 +114,208 @@
                 font-size:14px;
                 opacity:0.7;
             }
+            /* my dumpland */
+            #trial{
+                height:320px;
+                width:280px;
+                opacity: 70%;
+            }
+            #maggie{
+                height:360px;
+                width:270px;
+                opacity: 70%;
+            }
+            #sarah{
+                height:240px;
+                width:330px;
+                opacity: 70%;
+            }
+            #tina{
+                height:360px;
+                width:270px;
+                opacity: 70%;
+            }
+            #suzzane{
+                height:220px;
+                width:340px;
+                opacity: 70%;
+            }
+            #christopher{
+                height:220px;
+                width:320px;
+                opacity: 70%;
+            }
+            #lisa{
+                height:340px;
+                width:270px;
+                opacity: 70%;
+            }
+            #samantha{
+                height:240px;
+                width:270px;
+                opacity: 70%;
+            }
+            #ariel{
+                height:24px;
+                width:24px;
+            }
+            .cup  .trim{
+                position: relative;
+                width: calc(300px - 30px);
+                height: calc(250px - 30px);
+                background: rgba(63, 66, 66, 0.247);
+                float: left;
+                margin: 15px;
+                box-sizing:border-box;
+                overflow: hidden;
+                border-radius: 10px;
+                z-index:1;
+            }            
+            .cup  .trim .content{
+                position: absolute;
+                top:100%;
+                height:calc(100% - 100px);
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                opacity: 0;
+                z-index:2;
+            }
+            .cup .trim .content h3{
+                position: absolute;
+                margin: 0 0 10px;
+                padding: 0;
+                color: #fff;
+                font-size:24px;
+                z-index:2;
+            }
+            .cup  .trim .content p{
+                margin: 0 ;
+                padding: 0;
+                color: #fff;
+            }
+            /* change to relative if you want it to be centered */
+            .more{
+                position: absolute;
+                background:rgba(129, 129, 129, 0.452); 
+                color:#000;
+                text-decoration: none;
+                text-transform:uppercase; 
+                font-size:1em;
+                letter-spacing:0.1em;
+                font-weight: 400;
+                padding:10px 30px;
+                transition:0.5s;
+                z-index: 2;
+                border:1px solid black;
+                
+            } 
+            .more:hover{
+                background:var(--clr);
+                box-shadow:0 0 35px var(--clr);
+            }
+            .zesty{
+                position: absolute;
+                padding:300px auto;
+                top: 50%;
+                transform: translate(40%,350%);
+                z-index: 2;  
+            }
+            section{
+                position: relative;
+                width: 100%;
+                height: 50vh;
+                padding: 100px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            section::before{
+                content:'';
+                position:absolute;
+                bottom:0;
+                width:100%;
+                height:100px;
+                background: linear-gradient(to top,#13151f,transparent);
+                z-index: 1000;
+            }
+            .sec{
+                position: relative;
+                padding: 200px;
+                background: #13151f;
+            }
+            .sec h2{
+                font-size: 3.5em;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .sec p{
+                font-size: 1em;
+                color:#fff;
+            }
+            .cup{
+                position: relative;
+                width: 1200px;
+                height: 100px;
+                margin: 100px auto 100px;
+                z-index: 1;
+            }
+
+            /* box hovering */
+            .cup  .box{
+                position: relative;
+                width: calc(300px - 30px);
+                height: calc(250px - 30px);
+                background: rgba(63, 66, 66, 0.247);
+                float: left;
+                margin: 15px;
+                box-sizing:border-box;
+                overflow: hidden;
+                border-radius: 10px;
+                z-index:1;
+            }            
+            .cup  .box .content{
+                position: absolute;
+                top:100%;
+                height:calc(100% - 100px);
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                opacity: 0;
+                z-index:2;
+            }
+            .cup .box .content h3{
+                position: absolute;
+                margin: 0 0 10px;
+                padding: 0;
+                color: #fff;
+                font-size:24px;
+                z-index:2;
+            }
+            .cup  .box .content p{
+                margin: 0 ;
+                padding: 0;
+                color: #fff;
+            }
+            .box:hover{
+                transform: scale(1.1);
+            }
+            
+            .titles{
+                text-align: center;    
+            }
+        .modal-bg{
+            opacity:0;
+            background-color: rgba(0,0,0,0.5);
+            transition: visibility 0s opacity 0,5s;
+        }
+        .bg-active{
+            visibility: visible;
+            opacity:1;
+        }
 
         </style>
     </head>
@@ -145,6 +348,130 @@
                </button>
           </div>
       </div>
+      <!--Reading teachers start here-->
+
+    <h1 class="titles">Reading</h1>
+    <!-- first row begins here -->
+    <div class="cup">
+        <div class="box"> 
+            <img id="trial" src="teacher1.jpg">
+            <div class="zesty"><button class="more" id="open" style="--clr:#1e9bff">Connect</button></div>
+            <div class="content" id="modal_container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                ea officiis veniam  </p>   
+            </div>  
+            </div> 
+            <div class="box">         
+                <img id="maggie" src="teacher2.jpg">
+                <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>  
+            <div class="content">
+                <h3>Math</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div> 
+            <div class="box"> 
+                <img id="sarah" src="teacher3.jpg">
+                <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>SAT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam </p>
+            </div>  
+            </div> 
+            <div class="box"> 
+                <img id="tina" src="teacher4.jpg">
+                <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>Other</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div> 
+    </div>  
+    <!-- first row ends  -->
+    <div class="cup">
+          <div class="box">   
+            <img id="suzzane" src="teacher5.jpg">
+            <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>Writing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div>  
+            <div class="box">         
+            <img id="christopher" src="teacher6.jpg">
+            <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>Math</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div> 
+            <div class="box"> 
+            <img id="lisa" src="teacher7.jpg">
+            <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>SAT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam </p>
+            </div>  
+            </div> 
+            <div class="box"> 
+            <img id="samantha" src="teacher8.jpg">
+            <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>Other</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div> 
+    </div>
+    <!-- second row ends here  -->
+    <div class="cup">
+        <div class="box"> 
+            <img id="samantha" src="teacher8.jpg">
+            <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>Writing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div> 
+            <div class="box">         
+                <img id="samantha" src="teacher8.jpg">
+                <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>Math</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+            </div>  
+            </div> 
+            <div class="box"> 
+                <img id="samantha" src="teacher8.jpg">
+                <div class="zesty"><a class="more"href="#" style="--clr:#1e9bff"><span> connect</span></a></div>
+            <div class="content">
+                <h3>SAT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam </p>
+            </div>  
+             </div> 
+             
+            <div class="box"> 
+                <img id="ariel" src="teacher8.jpg">
+            
+                  <button id="open"> Connect </button>
+            
+                <div class="modal-container" id="modal_container">
+                    <div class="modal">
+                    <h1>Other</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
+                    ea officiis veniam  </p>
+                    <button id="close">Close</button>
+                    </div>
+                </div>  
+            </div> 
       <script>
        const open =document.getElementById('open');          
        const modal_container =document.getElementById('modal_container');
