@@ -85,6 +85,7 @@
                 width:100%;
                 transition: opacity 0.3s ease;
                 pointer-events:none;
+                z-index:2;
             }
             .modal-container.show{
                 pointer-events: auto;
@@ -337,16 +338,17 @@
       
       <div class="modal-container" id="modal_container">
           <div class="modal">
-               <h1>Modals are cool</h1>
+               <h1>Get Newsletter</h1>
                <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Libero nesciunt voluptates laudantium saepe laborum provident,
-                temporibus culpa sed vero cumque necessitatibus, fugiat 
-                aspernatur harum aut mollitia, quia impedit animi est.
+                Enter your email in the box below to recieve latests
+                news and information about our activities
                </p>
-               <button id="close">
-                  Close me
-               </button>
+               <form>
+                  <input type="email" placeholder="Email" required>
+                  <br>
+                <button id="close">Submit</button>
+               </form>
+               
           </div>
       </div>
       <!--Reading teachers start here-->
@@ -469,7 +471,6 @@
                     <h1>Other</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem 
                     ea officiis veniam  </p>
-                    <button id="close">Close</button>
                     </div>
                 </div>  
             </div> 
