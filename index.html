@@ -111,9 +111,15 @@
                 margin-bottom: 10px;
                 color: #fff;
             }
+            .homepgsection1heading {
+                font-size: 5.5em;
+                margin-bottom: 10px;
+                color: #fff;
+            }
             .sec p{
                 font-size: 1em;
                 color:#fff;
+                font-size: 30px;
             }
             img{
                 float:left;
@@ -126,7 +132,7 @@
             }
          
             .step{
-                -webkit-text-fill-color: rgb(71, 255, 255);
+                -webkit-text-fill-color: rgb(51, 230, 255);
                 padding: 10px;
             }
             .section p{
@@ -135,6 +141,33 @@
             }
             .section img{
                 margin-right: 20px;
+            }
+            button{
+                position:relative;
+                width:200px;
+                padding:15px 0;
+                text-align: center;
+                margin:20px 10px;
+                font-weight: bold;
+                border:2px solid #3eff37;
+                background:transparent;  
+                color:#fff;
+                cursor:pointer;
+                overflow: hidden;
+            }
+            .race{
+                background: #3eff37;
+                /* opacity: 90%; */
+                height: 100%;
+                width:0;
+                position: absolute;
+                left:0;
+                bottom:0;
+                z-index: 1;
+                transition:0.5s;
+            }
+            button:hover .race{
+                width: 100%;
             }
         
         
@@ -160,27 +193,29 @@
        
         
         <div class="sec" id="sec">
-            <h2>Get Connected In <span class="step">3</span> Easy Steps</h2>    
+            <br><br>
+            <h1 class="homepgsection1heading">Get Connected In <span class="step">3</span> Easy Steps</h1>    
             <div class="section">
+                <br><br>
               <p>
               <img id="imageone" src="one.png" alt="step one" >
-              <br><br>
-              <span class="step">Select a Tutor</span> Choose a tutor for the subject or subjects that you need help with.
-              </p>
+             <span class="step">Select a Tutor</span> Choose a tutor for the subject or subjects that you need help with.
+            </p>
+            <button><span class="race"></span>Tutors</button>
             </div>
-            
+            <br><br>
+
             <div class="section">
             <p>
             <img id="imagetwo" src="two.png" alt="step two" >
-            <br><br>
             <span class="step"> Get Help </span> Schedule an appointment and get the help you need.
             </p>
             </div>
-            
+            <br><br>
+
             <div class="section">
             <p>
             <img id="imagethree" src="three.png" alt="step 3" >           
-            <br><br>
             <span class="step" alt="step three"> Give Feedback </span> Let us know how it went.
             </p>
             </div>
@@ -199,7 +234,6 @@
                 text.style.marginRight = value * 4 + 'px';
                 text.style.marginTop = value * 1.5 + 'px';
                 btn.style.marginTop = value * 1.5 + 'px';
-                header.style.top = value * 0.5 + 'px';
             })
         </script>
     </body>
