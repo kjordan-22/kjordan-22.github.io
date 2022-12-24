@@ -187,6 +187,7 @@ button:hover{
     right:0;
     left:0;
     display: none;
+    z-index:1001;
 }
 .modal{
     color:white;
@@ -256,6 +257,7 @@ input{
 .tbd{
     padding:20px 90px;
 }
+/* newsletter modal ends */
 
 
 
