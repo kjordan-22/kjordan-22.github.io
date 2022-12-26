@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     function closeModal(){
         $('#modal-container').hide();
+        $('html body').css('overflow', 'hidden');
     }
 
     setTimeout(showModal,3000);
