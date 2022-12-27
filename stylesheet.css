@@ -170,7 +170,7 @@ ul li{
 .about .row{
     display: flex;
     align-items: center;
-    background: #000000;
+    background: #505353;
     flex-wrap: wrap;
 }
 .about .row .image{
@@ -193,6 +193,13 @@ ul li{
     color:#ccc;
     padding:1 rem 0;
     line-height: 1.8;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid black;
+    background-color: aqua;
 }
 
 
