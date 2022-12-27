@@ -155,6 +155,18 @@ ul li{
     padding: 0;
     color: #fff;
 }
+/* for tutors page */
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span{
+    color:rgb(230, 129, 71);
+    text-transform: uppercase;
+}
 
 
 
