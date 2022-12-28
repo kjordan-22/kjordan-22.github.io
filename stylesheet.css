@@ -174,34 +174,71 @@ ul li{
     background: #505353;
     flex-wrap: wrap;
     flex:1 1 45rem;
-    width: 100%;
+    width: 100%; 
 }    
 .about .row .content{
     flex:1 1 45rem;
-    /* padding: 1rem; */
+    padding: 1rem;
 }
 .about .row .content h3{
     font-size: 2rem;
     color:#fff;
+    margin-right: 100px;
 }
 .about .row .content p{
     font-size: 1rem;
     color:#ccc;
     /* padding:.5 rem 0; */
     line-height: 1.8;
+    margin-right: 100px;
 }
 .image{
-    width: 50%;
+    position: relative;
+    width: 100%;
     height: auto;
-    border-radius: 50%;
-    padding:10px 10px 10px 10px;
+    /* border-radius: 50%; */
+    /* padding:10px 10px 10px 10px;
+    margin-left: 10px; */
+    z-index: 5;
 }
-.imageright{
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    float:right;
+.glowy{
+    position: relative;
+    margin: 25px 50px 50px 25px;
+    width:300px;
+    height:300px;
+    background: linear-gradient(#000, #262626);
+    border-radius: 500%;
 }
+.glowy:before,
+.glowy:after{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    background: linear-gradient(45deg, #00abfb, #0000ff, #00a2ff, #6999ff, #00c3ff,
+    #00abfb, #0000ff, #00a2ff, #6999ff, #00c3ff);
+    background-size: 400%;
+    width:calc(100% + 4px);
+    height:calc(100% + 4px);
+    z-index: 1;
+    animation: animate 20s linear infinite;
+    }
+    .glowy:after{
+        filter: blur(20px);
+    }
+    @keyframes animate{
+        0%{
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+         }
+        100%{
+            background-position: 0 0;
+        }
+
+    }
+
 
 
 
