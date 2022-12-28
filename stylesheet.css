@@ -241,6 +241,8 @@ ul li{
     .rating{
         position: absolute;
         z-index: 1001;
+        color: #0000ff;
+        padding:200px 0px 0px 35%;
     }
 
 
