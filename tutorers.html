@@ -13,7 +13,7 @@
             {
                 switch (listindex){
                 case "Reading" :
-                document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[0]=new Option("Select status","");
                     document.getElementById("status").options[1]=new Option("Arianna Griffin","open");
                     document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
                     document.getElementById("status").options[3]=new Option("Allison Powell","shipped");
@@ -22,7 +22,7 @@
                     document.getElementById("status").options[6]=new Option("Jenna Morris","shipped");
                     document.getElementById("status").options[7]=new Option("Richard Cho","shipped");
                     document.getElementById("status").options[8]=new Option("Rebecca Hammock","shipped");
-                    document.getElementById("status").options[9]=new Option("Tessa Bridge","shipped")
+                    document.getElementById("status").options[9]=new Option("Tessa Bridge","shipped");
                     document.getElementById("status").options[10]=new Option("Xiomara Reyes","shipped");
                 case "Math" :
                     document.getElementById("status").options[0]=new Option("Select status","");
@@ -34,9 +34,21 @@
                     document.getElementById("status").options[6]=new Option("Shawn Wilson","shipped");
                     document.getElementById("status").options[7]=new Option("Benjamin Nicholson","shipped");
                     document.getElementById("status").options[8]=new Option("Sofia McNamara","shipped");
-                    document.getElementById("status").options[9]=new Option("Muntazir Darmel","shipped")
+                    document.getElementById("status").options[9]=new Option("Muntazir Darmel","shipped");
                     document.getElementById("status").options[10]=new Option("Angie Brand","shipped");
                     break;
+                case "Reading" :
+                    document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[1]=new Option("Arianna Griffin","open");
+                    document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
+                    document.getElementById("status").options[3]=new Option("Allison Powell","shipped");
+                    document.getElementById("status").options[4]=new Option("Kevin Adkins","shipped");
+                    document.getElementById("status").options[5]=new Option("Patricia Jones","shipped");
+                    document.getElementById("status").options[6]=new Option("Jenna Morris","shipped");
+                    document.getElementById("status").options[7]=new Option("Richard Cho","shipped");
+                    document.getElementById("status").options[8]=new Option("Rebecca Hammock","shipped");
+                    document.getElementById("status").options[9]=new Option("Tessa Bridge","shipped");
+                    document.getElementById("status").options[10]=new Option("Xiomara Reyes","shipped");
                 case "SAT" :
                 document.getElementById("status").options[0]=new Option("Select status","");
                     document.getElementById("status").options[1]=new Option("Margret Fisher","open");
@@ -47,7 +59,7 @@
                     document.getElementById("status").options[6]=new Option("Kevin Adkins","shipped");
                     document.getElementById("status").options[7]=new Option("Zoey Pierce","shipped");
                     document.getElementById("status").options[8]=new Option("Adam Doe","shipped");
-                    document.getElementById("status").options[9]=new Option("Patricia Jones","shipped")
+                    document.getElementById("status").options[9]=new Option("Patricia Jones","shipped");
                     document.getElementById("status").options[10]=new Option("James Johnson","shipped");
                     
                     break;
@@ -61,7 +73,7 @@
                     document.getElementById("status").options[6]=new Option("Tessa Bridge","shipped");
                     document.getElementById("status").options[7]=new Option("Rose Gomez","shipped");
                     document.getElementById("status").options[8]=new Option("Angie Brand","shipped");
-                    document.getElementById("status").options[9]=new Option("Paige Simpson","shipped")
+                    document.getElementById("status").options[9]=new Option("Paige Simpson","shipped");
                     document.getElementById("status").options[10]=new Option("Zoey Pierce","shipped");
                 }
                 return true;
@@ -322,7 +334,7 @@
                         <input type="text">
                         <br>
                     <!-- options begin -->
-                        <div class="category_div" id="category_div">Source:
+                        <div class="category_div" id="category_div">Subject:
                             <select id="source" name="source" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
                             <option value="">Select source</option>
                             <option value="Reading">READING</option>
@@ -333,9 +345,9 @@
                         </div>
                         <br>
                         <!-- wtf does this do -->
-                        <div class="sub_category_div" id="sub_category_div">Status:
+                        <div class="sub_category_div" id="sub_category_div">Tutor:
                             <script type="text/javascript" language="JavaScript">
-                            document.write('<select name="status" id="status"><option value="">Select status</option></select>')
+                            document.write('<select name="status" id="status"><option value="">Select Tutor</option></select>')
                             </script>
                             <noscript>
                             <select id="status" name="status">
