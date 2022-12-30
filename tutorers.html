@@ -7,6 +7,66 @@
         <link href="stylesheet.css" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <script language="javascript" type="text/javascript">
+            function dynamicdropdown(listindex)
+            {
+                switch (listindex){
+                case "Reading" :
+                document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[1]=new Option("Arianna Griffin","open");
+                    document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
+                    document.getElementById("status").options[3]=new Option("Allison Powell","shipped");
+                    document.getElementById("status").options[4]=new Option("Kevin Adkins","shipped");
+                    document.getElementById("status").options[5]=new Option("Patricia Jones","shipped");
+                    document.getElementById("status").options[6]=new Option("Jenna Morris","shipped");
+                    document.getElementById("status").options[7]=new Option("Richard Cho","shipped");
+                    document.getElementById("status").options[8]=new Option("Rebecca Hammock","shipped");
+                    document.getElementById("status").options[9]=new Option("Tessa Bridge","shipped")
+                    document.getElementById("status").options[10]=new Option("Xiomara Reyes","shipped");
+                case "Math" :
+                    document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[1]=new Option("Sarah Donovan","open");
+                    document.getElementById("status").options[2]=new Option("Lily Chen","delivered");
+                    document.getElementById("status").options[3]=new Option("Bill Walker","shipped");
+                    document.getElementById("status").options[4]=new Option("James Johnson","shipped");
+                    document.getElementById("status").options[5]=new Option("Bailey Evermore","shipped");
+                    document.getElementById("status").options[6]=new Option("Shawn Wilson","shipped");
+                    document.getElementById("status").options[7]=new Option("Benjamin Nicholson","shipped");
+                    document.getElementById("status").options[8]=new Option("Sofia McNamara","shipped");
+                    document.getElementById("status").options[9]=new Option("Muntazir Darmel","shipped")
+                    document.getElementById("status").options[10]=new Option("Angie Brand","shipped");
+                    break;
+                case "SAT" :
+                document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[1]=new Option("Margret Fisher","open");
+                    document.getElementById("status").options[2]=new Option("Arianna Griffin","delivered");
+                    document.getElementById("status").options[3]=new Option("Richard Cho","shipped");
+                    document.getElementById("status").options[4]=new Option("Shawn Wilson","shipped");
+                    document.getElementById("status").options[5]=new Option("Muntazir Darmel","shipped");
+                    document.getElementById("status").options[6]=new Option("Kevin Adkins","shipped");
+                    document.getElementById("status").options[7]=new Option("Zoey Pierce","shipped");
+                    document.getElementById("status").options[8]=new Option("Adam Doe","shipped");
+                    document.getElementById("status").options[9]=new Option("Patricia Jones","shipped")
+                    document.getElementById("status").options[10]=new Option("James Johnson","shipped");
+                    
+                    break;
+                case "Other" :
+                document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[1]=new Option("Victoria Long","open");
+                    document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
+                    document.getElementById("status").options[3]=new Option("Tina Zhao","shipped");
+                    document.getElementById("status").options[4]=new Option("Xiomara Reyes","shipped");
+                    document.getElementById("status").options[5]=new Option("Brenda Mayors","shipped");
+                    document.getElementById("status").options[6]=new Option("Tessa Bridge","shipped");
+                    document.getElementById("status").options[7]=new Option("Rose Gomez","shipped");
+                    document.getElementById("status").options[8]=new Option("Angie Brand","shipped");
+                    document.getElementById("status").options[9]=new Option("Paige Simpson","shipped")
+                    document.getElementById("status").options[10]=new Option("Zoey Pierce","shipped");
+                }
+                return true;
+            }
+            </script>
         <style>
              *{
                 margin: 0;
@@ -244,6 +304,7 @@
             </div>
             <div class="w3-container"></div>
             <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
+            <!-- the appointment modal content begins -->
             <div id="id01" class="w3-modal">
                 <div class="w3-modal-content">
                   <div class="w3-container">
@@ -260,26 +321,35 @@
                         <br>
                         <input type="text">
                         <br>
-                    <div class="f-group">
-                        <label for="">Subject</label>
-                        <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
-                            <option value=""> --Choose Subject-- </option>
-                            <option value="india">India</option>
-                            <option value="america">Math</option>
-                        </select>
-                    </div>
-
-                    <div class="f-group">
-                        <label for="">Teacher</label>
-                        <select name="slct2" id="slct2"></select>
-
-                    </div>
+                    <!-- options begin -->
+                        <div class="category_div" id="category_div">Source:
+                            <select id="source" name="source" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                            <option value="">Select source</option>
+                            <option value="Reading">READING</option>
+                            <option value="Math">MATH</option>
+                            <option value="SAT">SAT</option>
+                            <option value="Other">OTHER</option>
+                            </select>
+                        </div>
+                        <br>
+                        <!-- wtf does this do -->
+                        <div class="sub_category_div" id="sub_category_div">Status:
+                            <script type="text/javascript" language="JavaScript">
+                            document.write('<select name="status" id="status"><option value="">Select status</option></select>')
+                            </script>
+                            <noscript>
+                            <select id="status" name="status">
+                                <option value="open">OPEN</option>
+                                <option value="delivered">DELIVERED</option>
+                            </select>
+                            </noscript>
+                        </div>
                     </form>
                   </div>
                 </div>
                 
               </div>
-              
+              <!-- modal ends hopefully -->
               
               
               <a href="droplist.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
@@ -1545,11 +1615,11 @@
         <div class="row">
             <div class="glowy">
             <div class="image">
-                <img class="image" src="teacher14.jpg" alt="tree pic">
+                <img class="image" src="teacher22.jpg" alt="tree pic">
             </div>
             </div>
             <div class="content">
-                <h3>James Johnson</h3>
+                <h3>Zoey Pierce</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing
                  elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
                  quam dolorem laboriosam quod earum natus labore magni illum 
