@@ -10,10 +10,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <script language="javascript" type="text/javascript">
             function dynamicdropdown(listindex)
+            // droplist begins
             {
                 switch (listindex){
                 case "Reading" :
-                    document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[0]=new Option("Select Tutor","");
                     document.getElementById("status").options[1]=new Option("Arianna Griffin","open");
                     document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
                     document.getElementById("status").options[3]=new Option("Allison Powell","shipped");
@@ -26,7 +27,7 @@
                     document.getElementById("status").options[10]=new Option("Xiomara Reyes","shipped");
                     break;
                 case "Math" :
-                    document.getElementById("status").options[0]=new Option("Select status","");
+                    document.getElementById("status").options[0]=new Option("Select Tutor","");
                     document.getElementById("status").options[1]=new Option("Sarah Donovan","open");
                     document.getElementById("status").options[2]=new Option("Lily Chen","delivered");
                     document.getElementById("status").options[3]=new Option("Bill Walker","shipped");
@@ -38,21 +39,8 @@
                     document.getElementById("status").options[9]=new Option("Muntazir Darmel","shipped");
                     document.getElementById("status").options[10]=new Option("Angie Brand","shipped");
                     break;
-                case "Reading" :
-                    document.getElementById("status").options[0]=new Option("Select status","");
-                    document.getElementById("status").options[1]=new Option("Arianna Griffin","open");
-                    document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
-                    document.getElementById("status").options[3]=new Option("Allison Powell","shipped");
-                    document.getElementById("status").options[4]=new Option("Kevin Adkins","shipped");
-                    document.getElementById("status").options[5]=new Option("Patricia Jones","shipped");
-                    document.getElementById("status").options[6]=new Option("Jenna Morris","shipped");
-                    document.getElementById("status").options[7]=new Option("Richard Cho","shipped");
-                    document.getElementById("status").options[8]=new Option("Rebecca Hammock","shipped");
-                    document.getElementById("status").options[9]=new Option("Tessa Bridge","shipped");
-                    document.getElementById("status").options[10]=new Option("Xiomara Reyes","shipped");
-                    break;
                 case "SAT" :
-                document.getElementById("status").options[0]=new Option("Select status","");
+                document.getElementById("status").options[0]=new Option("Select Tutor","");
                     document.getElementById("status").options[1]=new Option("Margret Fisher","open");
                     document.getElementById("status").options[2]=new Option("Arianna Griffin","delivered");
                     document.getElementById("status").options[3]=new Option("Richard Cho","shipped");
@@ -66,7 +54,7 @@
                     
                     break;
                 case "Other" :
-                document.getElementById("status").options[0]=new Option("Select status","");
+                document.getElementById("status").options[0]=new Option("Select Tutor","");
                     document.getElementById("status").options[1]=new Option("Victoria Long","open");
                     document.getElementById("status").options[2]=new Option("Jemma Gaines","delivered");
                     document.getElementById("status").options[3]=new Option("Tina Zhao","shipped");
@@ -81,6 +69,7 @@
                 return true;
             }
             </script>
+            <!-- droplist ends -->
         <style>
              *{
                 margin: 0;
@@ -335,10 +324,11 @@
                         <br>
                         <input type="text">
                         <br>
+                        <br>
                     <!-- options begin -->
                         <div class="category_div" id="category_div">Subject:
                             <select id="source" name="source" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-                            <option value="">Select source</option>
+                            <option value="">Select Subject</option>
                             <option value="Reading">READING</option>
                             <option value="Math">MATH</option>
                             <option value="SAT">SAT</option>
@@ -358,6 +348,10 @@
                             </select>
                             </noscript>
                         </div>
+                        <!-- here to add more to the form -->
+                        <label>Email:</label>
+                        <br>
+                        <input type="email">
                     </form>
                   </div>
                 </div>
