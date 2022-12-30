@@ -85,7 +85,7 @@ ul li{
 /* used on tutors page */
 .container{
     position: relative;
-    width: 1200px;
+    width: 100vw;
     height: 250px;
     margin: 240px auto 50px;
    
