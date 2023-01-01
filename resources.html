@@ -15,7 +15,8 @@
             }
             body{
                  min-height: 100vh;
-                 background: #000;
+                 background: rgb(78, 74, 74);
+                 overflow-x: hidden;
                  /* background:linear-gradient(#ff6ef3,#6ee2ff,#b73bff) */
             }
            header{
@@ -63,8 +64,8 @@
         .shadow{
             position: relative;
             margin: 0px auto 50px;
-            width: 400px;
-            height:250px;
+            width: 30vw;
+            height:30vh;
             background: linear-gradient(0deg, #000,#262626);
         }
         .shadow:before,
@@ -100,15 +101,49 @@
             color: rgb(255, 255, 255);
         }
         .goa{
-                   position: relative;
-                   width: 100vw;
-                   height: auto;
-                   margin: 240px auto 150px;
-                  }
+            display: flex;
+            position: relative;
+            width: 100vw;
+            height: auto;
+            margin: 240px auto 150px;
+            padding:0vw 0vw 0vw 5vw;
+            }
         .khan{
-            height:100%;
-            width:100%;
-        }          
+            display: flex;
+            height:90%;
+            width:auto;
+            margin-left: 21%;
+            margin-top: 3%;
+            /* padding:10% 10% ; */
+            /* transform: translate(38%, 5%); */
+            
+        }
+        .mathnat{
+            display: flex;
+            height:25vh;
+            width:auto;
+            margin-left: 5vw;
+            margin-top: 2vh;
+            /* padding:10% 10% ; */
+            /* transform: translate(38%, 5%); */
+            
+        }
+        .khanacademy{
+            display: flex;
+            width:80%;
+            padding:0vw 0vw 0vw 15vw;
+        }      
+        p{
+            color:white;
+        } 
+        .academy{
+            display: flex;
+            padding:0vw 0vw 0vw 15vw;
+        }  
+        .mathnation{
+            display: flex;
+            padding:10vw 0vw 0vw 15vw ;
+        } 
         </style>
     </head>
     <body>
@@ -125,9 +160,57 @@
         <div class="goa" >
             <h2>Check out a few of these resources if there are no tutors around</h2>
         </div>
-        <div class="shadow">
-        <img class="khan" src="khan.jpg">
+        <div>
+            <h2 class="academy">Khan Academy</h2>
         </div>
-        <div></div>
+        <div class="shadow">
+        <img class="khan" src="gram.png">
+        </div>
+        <div class="khanacademy">
+            <p>Khan Academy is an American non-profit educational organization created
+               in 2008 by Sal Khan. Its goal is creating a set of online tools that 
+               help educate students. The organization produces short lessons in the 
+               form of videos. Its website also includes supplementary practice exercises
+               and materials for educators. It has produced over 8,000 video lessons teaching
+               a wide spectrum of academic subjects, originally focusing on mathematics and
+               sciences. All resources are available for free to users of the website and 
+               application.</p>
+        </div>
+        
+        
+        <div>
+            <h2 class="mathnation">Math Nation</h2>
+        </div>
+        <div class="shadow">
+        <img class="mathnat" src="mathnation.png">
+        </div>
+        <div class="khanacademy">
+            <p>Math Nation is a dynamic online (and printed workbook) resource that helps 
+               students master middle and high school mathematics. Math Nation provides 
+               24-hour access to high-quality instructional videos, workbooks, collaborative 
+               learning tools, and adaptive assessments and support. To ensure these materials 
+               cover every concept students need to master to succeed in middle and high school
+               math, they completely customize there content to the academic standards of each of
+               their individual partner states and work with local universities to validate their 
+               alignment for each state.</p>
+        </div>
+        
+        
+        <div>
+            <h2 class="mathnation">Gizmos</h2>
+        </div>
+        <div class="shadow">
+        <img class="khan" src="gizmos.png">
+        </div>
+        <div class="khanacademy">
+            <p>ExploreLearning Gizmos is a Charlottesville, Virginia-based company which operates a 
+               large library of interactive online simulations for mathematics and science education
+               in grades 3 through 12. These simulations are called 'Gizmos'. The company's website describes 
+               their library of over 450 Gizmos as the world's largest collection of such materials.
+               "Gizmos" are a collection of online interactive simulations that are operated by 
+               ExploreLearning.The simulations are centered on science education and mathematics.
+               ExploreLearning also makes Reflex, which is an online, game-based system that helps 
+               students of all ability levels to develop instant recall of basic math facts.</p>
+        </div>
         </body>
 </html>
