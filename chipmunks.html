@@ -167,11 +167,14 @@
             }
             /* stars */
             .out{
-                    position: absolute;
-                    top:50%;
-                    left:50%;
-                    transform: translate(-50%, -50%)rotateY(180deg);
+                    /* position: absolute; */
+                    /* top:50%; */
+                    /* left:50%; */
+                    transform: rotateY(180deg);
+                    /* transform: translate(-50%, -50%); */
                     display:flex;
+                    margin-right: 30vw;
+                    
                 }
                 .out input{
                     display:none;
@@ -179,14 +182,14 @@
                 .out label{
                     display:block;
                     cursor:pointer;
-                    width:30px;
+                    width:3vw;
                 }
                 .out label:before{
                     content:'\f005';
                     font-family: 'fontAwesome';
                     position:relative;
                     display:block;
-                    font-size:30px;
+                    font-size:3vw;
                     color:#101010;
                 }
                 .out label:after{
@@ -194,7 +197,7 @@
                     font-family: 'fontAwesome';
                     position:absolute;
                     display:block;
-                    font-size:30px;
+                    font-size:3vw;
                     color:#159cff;
                     top:0;
                     opacity:0;
@@ -247,7 +250,7 @@
                         <input type="radio" name="star" id="star3"><label for="star3"></label>
                         <input type="radio" name="star" id="star4"><label for="star4"></label>
                         <input type="radio" name="star" id="star5"><label for="star5"></label>
-                       </div> 
+                    </div> 
                 </div>
                 <!-- end rating -->
                  <div class="form">
