@@ -243,6 +243,44 @@ ul li{
         }
 
     }
+
+    .tech{
+        position: relative;
+        margin: 25px 50px 50px 25px;
+        width:500px;
+        height:400px;
+        background: linear-gradient(#000, #262626);
+    }
+    .tech:before,
+    .tech:after{
+        content: '';
+        position: absolute;
+        top:-2px;
+        left:-2px;
+        background: linear-gradient(45deg, #00abfb, #0000ff, #00a2ff, #6999ff, #00c3ff,
+        #00abfb, #0000ff, #00a2ff, #6999ff, #00c3ff);
+        background-size: 400%;
+        width:calc(100% + 4px);
+        height:calc(100% + 4px);
+        z-index: -1;
+        animation: animate 20s linear infinite;
+        }
+        .tech:after{
+            filter: blur(20px);
+        }
+        @keyframes animate{
+            0%{
+                background-position: 0 0;
+            }
+            50%{
+                background-position: 400% 0;
+             }
+            100%{
+                background-position: 0 0;
+            }
+    
+        }
+
     .rating{
         position: relative;
         z-index: 1001;
