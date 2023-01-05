@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resources</title>
+        <title>FAQs</title>
         <link rel="shortcut icon" type="image/png" href="favicon.ico">
         <!-- <link href="stylesheet.css" rel="stylesheet"> -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -15,10 +15,11 @@
             }
             body{
                  min-height: 100vh;
-                 background: rgb(0, 0, 0);
+                 background: #1c1c1c;
                  overflow-x: hidden;
                  width:100%;
                  font-family: 'Poppins', sans-serif;
+                 color:#fff;
                  /* background:linear-gradient(#ff6ef3,#6ee2ff,#b73bff) */
             }
            header{
@@ -63,12 +64,182 @@
         }
         .middle{
             text-align:center;
+            margin-top: 20vh;
+        }
+        h1{
+            color:rgb(151, 148, 148);
+        }
+        section{
+            min-height: 100vh;
+            width:80%;
+            margin:0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title{
+            font-size:2rem;
+            margin-top:20vh;
+        }
+        .faq{
+            max-width: 700px;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #fff;
+            cursor:pointer;
+        }
+        .question{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .question h3{
+            font-size: 1.4rem;
+        }
+        .answer{
+            max-height: 0;
+            overflow:hidden;
+            transition: max-height 1.4s ease;
+        }
+        .answer p{
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .faq.active .answer{
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+        }
+        .faq.active svg{
+            transform: rotate(180deg);
+        }
+        svg{
+            transition: transform 0.5s ease-in;
+        }
+        @keyframes fade{
+            from{
+                opacity:0;
+                transform: translateY(-10px);
+            }
+            to{
+                opacity:1;
+                transform: translateY(0px);
+            }
         }
         </style>
     </head>
     <body>
-        <div class="middle">
-            <h1>FAQ's</h1>
-        </div>
+        <header>
+            <img src="logo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorers.html">Tutors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="review.html">Review</a></li>
+             </ul> 
+         </header>
+        
+
+        <section>
+            <h2 class="title">FAQs</h2>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>What is JavaScript ?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                           d="M3 3L21 21L39 3" 
+                           stroke="white" 
+                           stroke-width="7" 
+                           stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eveniet incidunt a 
+                        explicabo nisi impedit totam expedita adipisci vitae odit velit natus illum tenetur 
+                        voluptas amet, omnis dignissimos, tempore quae!
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>How do I schedule an appointment with a Tutor ?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                           d="M3 3L21 21L39 3" 
+                           stroke="white" 
+                           stroke-width="7" 
+                           stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eveniet incidunt a 
+                        explicabo nisi impedit totam expedita adipisci vitae odit velit natus illum tenetur 
+                        voluptas amet, omnis dignissimos, tempore quae!
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>How do you know what time your session is ?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                           d="M3 3L21 21L39 3" 
+                           stroke="white" 
+                           stroke-width="7" 
+                           stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eveniet incidunt a 
+                        explicabo nisi impedit totam expedita adipisci vitae odit velit natus illum tenetur 
+                        voluptas amet, omnis dignissimos, tempore quae!
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>How do you review a tutor ?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                           d="M3 3L21 21L39 3" 
+                           stroke="white" 
+                           stroke-width="7" 
+                           stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eveniet incidunt a 
+                        explicabo nisi impedit totam expedita adipisci vitae odit velit natus illum tenetur 
+                        voluptas amet, omnis dignissimos, tempore quae!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            const faqs = document.querySelectorAll(".faq");
+
+            faqs.forEach(faq => {
+                faq.addEventListener("click", () => {
+                    faq.classList.toggle("active");
+                })
+            })
+        </script>
     </body>
 </html>
