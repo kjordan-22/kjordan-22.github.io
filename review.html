@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connective Review</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <link href="stylesheet.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            body{
+                 min-height: 100vh;
+                 background:rgb(0, 0, 0)
+            }
+            header{
+                position:Sticky;
+                top:0;
+                left:0;
+                width:100vw;
+                padding:30px 100px;
+                display:flex;
+                justify-content: space-between;
+                align-items:center;
+                z-index: 10000;
+            }
+            header .logo{
+            color:#fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size:2em;
+            text-transform: uppercase;
+            }
+            header ul{
+                display:flex;
+                justify-content: center;
+                align-content: center;
+            }
+            header ul li{
+                list-style: none;
+                margin-left: 20px;
+            }
+            header ul li a{
+                text-decoration: none;
+                padding:6px 15px;
+                color:#fff;
+                border-radius: 20px;
+            }
+            header ul li a:hover,
+            header ul li a.active{
+                background:#fff;
+                color:#2b1055;
+            }
+            img{
+                float:left;
+                height:10%;
+                width:10%;
+            }
+            .feedback-user{
+                width:50vw;
+                position:absolute;
+                z-index: 5;
+                background-color: #fff;
+                transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                backface-visibility: hidden;
+                margin-left: 25vw;
+                
+            }
+            .feedback-header{
+                color:#fff;
+                background-color: teal;
+                padding-bottom: 2vh;
+                margin-bottom: 1vh;
+                padding-top: 2vh;
+                
+            }
+            .stars{
+                font-size: 30px;
+                color:rgb(71, 71, 70);
+            }
+            .rating,.title{
+                    margin-bottom: 1rem;
+                    font-weight:600;
+                    font-size: 24px;
+            }
+            .close-btn{
+                padding-top: 2vh;
+                text-align: right;
+                padding-right: 10px;
+                float: right;
+                background-color: teal;
+                border: none;
+            }
+            .title, .text{
+                padding-left: 10px;
+            }
+            .close-btn i{
+                cursor: pointer;
+            }
+            .form{
+                display:flex;
+                flex-direction: column;
+                margin:2rem 0;
+            }
+            .form-input:nth-child(1){
+                margin-bottom: 1rem;
+            }
+            label{
+                display:inline-block;
+                margin-bottom: 10px;
+                color: #575e5f;
+                padding-left: 10px;
+
+            }
+            input,textarea{
+                background-color: #f0f6f7;
+                border: none;
+                outline:none;
+                display: block;
+                border-radius: 5px;
+                width:80%;
+                padding:10px 12px;
+                border:1px solid transparent;
+                margin-left: 2vw;
+            }
+            textarea{
+                resize:none;
+            }
+            .submit{
+
+                color:#fff;
+                background-color: teal;
+                outline:none;
+                border:none;
+                padding: 10px 12px;
+                margin:5vh 5vw 5vh 5vw;
+                width:80%;
+                border-radius: 5px;
+            }
+            .rating .title{
+                color:rgb(97, 95, 95);
+            }
+            .stars,.rating{
+                padding-left: 10px;
+
+            }
+            h3{
+                color: aliceblue;
+                text-transform: uppercase;
+                
+                
+            }
+            .modal{
+                width:50vw;
+                height:50vh;
+            }
+            .words{
+                position: absolute;
+                margin-left: 42vw;
+                margin-top: 35vh;
+                z-index: -50;
+
+                
+            }
+            /* stars */
+            .out{
+                    /* position: absolute; */
+                    /* top:50%; */
+                    /* left:50%; */
+                    transform: rotateY(180deg);
+                    /* transform: translate(-50%, -50%); */
+                    display:flex;
+                    margin-right: 30vw;
+                    
+                }
+                .out input{
+                    display:none;
+                }
+                .out label{
+                    display:block;
+                    cursor:pointer;
+                    width:3vw;
+                }
+                .out label:before{
+                    content:'\f005';
+                    font-family: 'fontAwesome';
+                    position:relative;
+                    display:block;
+                    font-size:3vw;
+                    color:#101010;
+                }
+                .out label:after{
+                    content:'\f005';
+                    font-family: 'fontAwesome';
+                    position:absolute;
+                    display:block;
+                    font-size:3vw;
+                    color:#159cff;
+                    top:0;
+                    opacity:0;
+                    transition:.5s;
+                    text-shadow:0 2px 5px rgba(0,0,0,.5);
+                }
+                .out label:hover:after,
+                .out input:checked ~ label:after{
+                    opacity:1;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorers.html">Tutors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="review.html" class="active">Review</a></li>
+             </ul> 
+         </header>
+         <div class="words">
+         <h3>thanks for your feedback</h3>
+        </div>
+      <!-- Feedback start here -->
+         <div class="wrapper" id="modal-container">
+            <div class="rating-box">
+            </div>
+            <div class="feedback-user">
+                <div class="feedback-header">
+                    <!-- <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div> -->
+                    <div class="title">Send us your feedback</div>
+                    <div class="text">Do you have any suggestions? Let  us know in the field below</div>
+                </div>
+                <div class="rating">
+                    <!-- <div class="stars">
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="1"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="2"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="3"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="4"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="5"></i>
+                    </div> -->
+                    <div class="title">How was your experience?</div>
+                    <div class="out">
+                        <input type="radio" name="star" id="star1"><label for="star1"></label>
+                        <input type="radio" name="star" id="star2"><label for="star2"></label>
+                        <input type="radio" name="star" id="star3"><label for="star3"></label>
+                        <input type="radio" name="star" id="star4"><label for="star4"></label>
+                        <input type="radio" name="star" id="star5"><label for="star5"></label>
+                    </div> 
+                </div>
+                <!-- end rating -->
+                 <div class="form">
+                    <div class="form-input">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Tutor Name</label>
+                        <input list="brow" placeholder="Enter tutor name">
+                        <datalist id="brow">
+                            <option value="Arianna Griffin">
+                            <option value="Jemma Gaines">
+                            <option value="Allison Powell">
+                            <option value="Kevin Adkins">
+                            <option value="Patricia Jones">
+                            <option value="Jenna Morris">
+                            <option value="Richard Cho">
+                            <option value="Rebecca Hammock">
+                            <option value="Tessa Bridge">
+                            <option value="Xiomara Reyes">
+                            <option value="Sarah Donovan">
+                            <option value="Lily Chen">
+                            <option value="Bill Walker">
+                            <option value="James Johnson">
+                            <option value="Bailey Evermore">
+                            <option value="Shawn Wilson">
+                            <option value="Benjamin Nicholson">
+                            <option value="Sofia McNamara">
+                            <option value="Muntazir Darmel">
+                            <option value="Angie Brand">
+                            <option value="Margret Fisher">
+                            <option value="Zoey Pierce">
+                            <option value="Adam Doe">
+                            <option value="Victoria Long">
+                            <option value="Tina Zhao">
+                            <option value="Brenda Mayors">
+                            <option value="Rose Gomez">
+                            <option value="Paige Simpson ">
+                        </datalist>
+                    </div>
+                    <div class="form-input">
+                        <label for="feedback">Your feedback</label>
+                        <textarea name="" id="feedback" cols="30" rows="8" placeholder="Your feedback here..."></textarea>
+                    </div>
+                    
+                </div>
+                 <!-- end form  -->
+                <button class="submit" id="close">Send Feedback</button>
+            </div>
+             <!-- end feedback-user  -->
+         </div>
+
+         <!-- <div class="wrapper" id="modal-container">
+            <div class="feedback-user">
+                <div class="modal" id="modal">
+                      <button class="close-btn" id="close"><i class="fa fa-times"></i></button> 
+                    <div class="modal-content">
+                       <div class="feedback-header">
+                         <div class="title">Send us your feedback</div>
+                         <div class="text">Do you have any suggestions? Let us know in the field below</div>
+                       </div>
+                    <div class="rating">
+                        <div class="title">How was your experience?</div>
+                        <div class="stars">
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="1"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="2"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="3"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="4"></i>
+                        <i class="fa fa-star-o" aria-hidden="true" data-rating="5"></i>
+                        </div>
+                    </div>  
+                    <div class="form-input">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div> 
+                    <form class="form-input">
+                        <label for="feedback">Your feedback</label>
+                        <textarea name="" id="feedback" cols="30" rows="8" placeholder="Your feedback here..."></textarea> 
+                        <button class="submit" id="close">Send Feedback</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div> -->
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" intergrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0"
+        crossorigin="anonymous"></script>
+    <script>
+       $(document).ready(function(){
+
+
+
+function closeModal(){
+    $('#modal-container').hide();
+    $('html body').css('overflow', 'visible');
+}
+
+
+
+$('#close').click(function(){
+    closeModal()
+})
+})
+    </script>
+      </body>
+</html>
+
+
+
+
