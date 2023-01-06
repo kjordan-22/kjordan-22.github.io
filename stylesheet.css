@@ -247,8 +247,8 @@ ul li{
     .tech{
         position: relative;
         margin: 25px 50px 50px 25px;
-        width:500px;
-        height:400px;
+        width:40vw;
+        height:50vh;
         background: linear-gradient(#000, #262626);
     }
     .tech:before,
