@@ -13,7 +13,7 @@ body{
 }
  nav{
     background:rgba(61, 59, 59, 0.89);
-    /* overflow:auto; */
+    overflow:auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
