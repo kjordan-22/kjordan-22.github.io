@@ -13,55 +13,11 @@
                     padding:0;
                     background:#262626;
                 }
-                .out{
-                    position: absolute;
-                    top:50%;
-                    left:50%;
-                    transform: translate(-50%, -50%)rotateY(180deg);
-                    display:flex;
-                }
-                .out input{
-                    display:none;
-                }
-                .out label{
-                    display:block;
-                    cursor:pointer;
-                    width:50px;
-                }
-                .out label:before{
-                    content:'\f005';
-                    font-family: 'fontAwesome';
-                    position:relative;
-                    display:block;
-                    font-size:50px;
-                    color:#101010;
-                }
-                .out label:after{
-                    content:'\f005';
-                    font-family: 'fontAwesome';
-                    position:absolute;
-                    display:block;
-                    font-size:50px;
-                    color:#159cff;
-                    top:0;
-                    opacity:0;
-                    transition:.5s;
-                    text-shadow:0 2px 5px rgba(0,0,0,.5);
-                }
-                .out label:hover:after,
-                .out input:checked ~ label:after{
-                    opacity:1;
-                }
+                
             </style>
     </head>    
     <body>
-       <div class="out">
-        <input type="radio" name="star" id="star1"><label for="star1"></label>
-        <input type="radio" name="star" id="star2"><label for="star2"></label>
-        <input type="radio" name="star" id="star3"><label for="star3"></label>
-        <input type="radio" name="star" id="star4"><label for="star4"></label>
-        <input type="radio" name="star" id="star5"><label for="star5"></label>
-       </div>     
+           
             
     </body>
     
