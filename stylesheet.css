@@ -318,7 +318,7 @@ ul li{
             footer{
                 background-color: rgb(24, 23, 23);
                 color:#fff;
-                width:100vw;
+                /* width:100vw; */
             }
 
             .footer_info{
