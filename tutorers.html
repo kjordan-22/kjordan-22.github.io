@@ -230,6 +230,60 @@
                 color:rgb(0, 0, 0);
                 font-weight: 700;
             }
+            .close-btn{
+                padding-top: 2vh;
+                text-align: right;
+                padding-right: 10px;
+                float: right;
+                background-color: teal;
+                border: none;
+            }
+            .title, .text{
+                padding-left: 10px;
+            }
+            .close-btn i{
+                cursor: pointer;
+            }
+            .form{
+                display:flex;
+                flex-direction: column;
+                margin:2rem 0;
+            }
+            .form-input:nth-child(1){
+                margin-bottom: 1rem;
+            }
+            form label{
+                display:inline-block;
+                margin-bottom: 10px;
+                color: #ffffff; 
+                padding-left: 10px;
+
+            }
+            input,textarea{
+                background-color: #f0f6f7;
+                border: none;
+                outline:none;
+                display: block;
+                border-radius: 5px;
+                width:80%;
+                padding:10px 12px;
+                border:1px solid transparent;
+                margin-left: 2vw;
+            }
+            textarea{
+                resize:none;
+            }
+            .submit{
+
+                color:#fff;
+                background-color: teal;
+                outline:none;
+                border:none;
+                padding: 10px 12px;
+                margin:5vh 5vw 5vh 5vw;
+                width:80%;
+                border-radius: 5px;
+            }
         </style>
     </head>
     <body>
@@ -283,7 +337,7 @@
     </div> 
     <!-- teachers profiles start -->
     <!-- reading tutors begin -->
-    <!-- teacher 1 -->
+    <!-- teacher 1 used again Reading and Japanese -->
     <hr>
     <section class="about" id="about">
         <section class="bulldog">
@@ -298,14 +352,19 @@
             </div>
             <div class="content">
                 <h3>Arianna Griffin</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am a teacher at Park Vista High School, I'm relatively
+                   new to teaching as this is only my second year teaching.
+                   However, during my first year I had one of the highest
+                   test scores in the county. In my free time I also teach
+                   children and adults Japanese.
+                </p>
+                 <p>In my classroom in addition to teaching reading I also teach 
+                    leadership qualities. Leadership qualities help you to Learn
+                    in the best way possible </p>
+                 <p><b>One of my favorite quotes are...</b> 'It is essential to
+                    understand that battles are primarily won in the heart…(people)
+                    respond to leadership in a most remarkable way and once you have
+                    won (their) heart, (they) will follow you anywhere.' - Vince Lombardi</p>   
 
             </div>
             <div class="rating">
@@ -388,25 +447,25 @@
                         <p class="headline">Please select three dates and times that work for you and the tutor you selected will get back to you</p>
                         <br>
                         <label>Date: </label>
-                        <input type="date" class="subscribe" required>
+                        <input type="date" class="moon" required>
                         
                         <label>Time:</label>       
-                        <input type="time" class="subscribe" required>
+                        <input type="time" class="moon" required>
                         <br><br>
                         <label>Date: </label>
-                        <input type="date" class="subscribe" required>
+                        <input type="date" class="moon" required>
                         
                         <label>Time: </label>
-                        <input type="time" class="subscribe" required>
+                        <input type="time" class="moon" required>
                         <br><br>
                         <label>Date: </label>
-                        <input type="date"  class="subscribe" required>
+                        <input type="date"  class="moon" required>
                         
                         <label>Time</label>
-                        <input type="time" class="subscribe" required>
+                        <input type="time" class="moon" required>
                         <br><br>
                         <label for="phone">Enter your phone number:</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="subscribe" required> 
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="subscribe" placeholder="000-000-0000" required> 
                         <br>
                         <br>
                         <label>Additional Info</label>
@@ -428,7 +487,7 @@
         </div>
     </section>
 <hr>
-<!-- teacher 2 -->
+<!-- teacher 2 used again reading and Chemistry-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -438,14 +497,18 @@
             </div>
             <div class="content">
                 <h3>Jemma Gaines</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am currently in college getting my bachelors in teaching
+                    ,but don't let my lack of expierence fool you. I  
+                    tutored many elemetary and middle school kids in reading
+                    and writing while I was still in high school. Another thing I 
+                    did in high school was help my peers pass there Chemistry test
+                    and exams.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>'True teachers are those who
+                     use themselves as bridges over which they invite their students
+                      to cross; then, having facilitated their crossing, joyfully 
+                      collapse, encouraging them to create their own.'
+                    ― Nikos Kazantzakis </p>
 
             </div>
             <div class="rating">
@@ -456,7 +519,8 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <!-- <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a> -->
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tatum.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -471,14 +535,18 @@
             </div>
             <div class="content">
                 <h3>Allison Powell</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am currently a teacher at Wilsom elemetary, where I teach 
+                    math, reading, writing, and science to a lovely group of
+                    third graders. However, my strongests test scores come form
+                    reading and writing. Which are two of the tools that I think 
+                    should be valued the most as they will get you the furthests
+                    in the outside world.
+                </p>
+                 <p><b>One of me favorite quotes are...</b>'If you want to build a
+                ship, don't drum up people together to collect wood and don't
+                assign them tasks and work, but rather teach them to long 
+                for the endless immensity of the sea.
+                ― Antoine de Saint-Exupéry </p>
 
             </div>
             <div class="rating">
@@ -489,12 +557,12 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
 <hr>
-    <!-- teacher 4 -->
+    <!-- teacher 4 used again reading and SAT-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -504,14 +572,21 @@
             </div>
             <div class="content">
                 <h3>Kevin Adkins</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I teach Language Arts at Riverdale middle schools. 
+                Aside from teaching my students Lanugage Arts I teach 
+                them lifeskills and how to think for themselves. I also tutor
+                high school sytudents in reading, so that they can have high SAT scores. A fun
+                fact about me is that I am the head of the tech production
+                club at Riverdale middle.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>There's a lot of talk these days about giving children
+                    self-esteem. It's not something you can give; it's 
+                    something they have to build. Coach Graham worked in 
+                    a no-coddling zone. Self-esteem? He knew there was 
+                    really only one way to teach kids how to develop it: 
+                    You give them something they can't do, they work hard 
+                    until they find they can do it, and you just keep repeating 
+                    the process. - Randy Pausch, The Last Lecture </p>
 
             </div>
             <div class="rating">
@@ -522,12 +597,12 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 5 -->
+    <!-- teacher 5 used again reading and phscology-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -537,14 +612,20 @@
             </div>
             <div class="content">
                 <h3>Patricia Jones</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I teach English Composition II and Phsycology at Heartstein Community College.
+                I take pride in being the proffesor of the year a few years back.
+                Through out my five years of being a proffesor at Heartstein, I have
+                tried my best at making true connections with my students and I hope
+                to due that with you too, if your willing to allow me to do so. Prior to 
+                being a proffessor, I taught at Frankinstein Middle as a Language Arts 
+                teacher, whicch shows that I am well rounded and can teach students from 
+                all different age groups.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>'Learning is finding out 
+                    what you already know. Doing is demonstrating that you know it. 
+                    Teaching is reminding others that they know just as well as you. 
+                    You are all learners, doers, teachers.'
+                    - Richard Bach, Illusions: The Adventures of a Reluctant Messiah </p>
 
             </div>
             <div class="rating">
@@ -555,7 +636,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -570,14 +651,17 @@
             </div>
             <div class="content">
                 <h3>Jenna Morris</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>Hi, I'm Jenna and I teach ELA at Storybrooke Elementary.
+                In my free time I like to go on long walks and hiking trails 
+                with my two german shepheards. While in the classroom I try 
+                to teach my students how to let things go and move on with
+                their day so that they can learn their best.  </p>
+                 <p><b>One of my favorite quotes are...</b>'Finish each day and be done with it. You have done what 
+                    you could. Some blunders and absurdities no doubt crept 
+                    in; forget them as soon as you can. Tomorrow is a new day. 
+                    You shall begin it serenely and with too high a spirit to 
+                    be encumbered with your old nonsense.'
+                    - Ralph Waldo Emerson </p>
 
             </div>
             <div class="rating">
@@ -587,12 +671,12 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher7 -->
+    <!-- teacher7 used again coding and sat-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -602,14 +686,19 @@
             </div>
             <div class="content">
                 <h3>Richard Cho</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am a 10th and 11th grade writing teacher at Jackson
+                    High School. I am coming up on my sixth year teaching here
+                    and my third teacher of the year award. In my past I have tutored
+                    teens and young adults great skills for passing SATs. I take pride in teaching my 
+                    students individuality.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>'I can never read all the books I want; I can never be all 
+                    the people I want and live all the lives I want. I can 
+                    never train myself in all the skills I want. And why do 
+                    I want? I want to live and feel all the shades, tones and 
+                    variations of mental and physical experience possible in 
+                    my life. And I am horribly limited.'
+                    - Sylvia Plath, The Unabridged Journals of Sylvia Plath</p>
 
             </div>
             <div class="rating">
@@ -619,7 +708,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -634,14 +723,17 @@
             </div>
             <div class="content">
                 <h3>Rebecca Hammock</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am Proffessor Hammock and I teach English Composition II at
+                    Westchester Community College. I addition to this I also teach
+                    Intro to Humanities and have previously taught English III at
+                    Green Bay High. I find it important to teach my students with enthusiasm
+                    so that they dont get bored, which is the same attitude I hope to have with 
+                    you.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>'I'm more interested in arousing enthusiasm in kids than 
+                    in teaching the facts. The facts may change, but that 
+                    enthusiasm for exploring the world will remain with them 
+                    the rest of their lives.'                    - Seymour Simon </p>
 
             </div>
             <div class="rating">
@@ -651,12 +743,12 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 9 -->
+    <!-- teacher 9 used again history and reading-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -666,14 +758,21 @@
             </div>
             <div class="content">
                 <h3>Tessa Bridge</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am soon gonna be an English teacher at Velvo Middle School
+                   after graduating from University of Mideastern Florida. While I 
+                   was in school during my free time I tutored less fortunate 
+                   young kids and teens in reading and writing. I did this in my free 
+                   time because I found that it was important for every kid to
+                   have an equal chance because without a form education, you 
+                   have less oppurtunities at being successful. In addition to having
+                   an a solid foundation on english, I am also good at teaching
+                   history... all things from the Opium wars to the second World War.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>'The word "education" comes from the root e from ex, 
+                    out, and duco, I lead. It means a leading out. To 
+                    me education is a leading out of what is already 
+                    there in the pupil's soul.'
+                    - Muriel Spark, The Prime of Miss Jean Brodie </p>
 
             </div>
             <div class="rating">
@@ -683,12 +782,12 @@
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 10 -->
+    <!-- teacher 10 used again, Spanish and English-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -698,14 +797,17 @@
             </div>
             <div class="content">
                 <h3>Xiomara Reyes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>Hola, I'm Mrs. Xo (prononced Zoe), currently I am working 
+                at Martha High School teaching English I and Spanish I. During
+                my free time I like going to the beach with my husband and painting
+                by the ocean.</p>
+                 <p><b>One of my favorite quotes are...</b>'Teach them the 
+                    quiet words of kindness, to live beyond themselves. 
+                    Urge them toward excellence, drive them toward gentleness, 
+                    pull them deep into yourself, pull them upward toward 
+                    manhood, but softly like an angel arranging clouds. 
+                    Let your spirit move through them softly.'
+                    - Pat Conroy, The Prince of Tides </p>
 
             </div>
             <div class="rating">
@@ -715,7 +817,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -736,14 +838,18 @@
             </div>
             <div class="content">
                 <h3>Sarah Donovan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am an Algebra I teacher at Rudson High School. In my free time
+                I like to create things like pottery or paintings. While, in school 
+                I like to teach my students the importance of the little things, like 
+                celebrating getting an A- on a test, instead of looking down on yourself 
+                for getting two questions wrong.</p>
+                 <p><b>One of my favorite quotes are...</b>'When I was 5 years old, 
+                    my mother always told me that happiness was the key to life. 
+                    When I went to school, they asked me what I wanted to be when
+                    I grew up. I wrote down 'happy'. They told me I didn't 
+                    understand the assignment, and I told them they didn't 
+                    understand life.”
+                    ― John Lennon </p>
 
             </div>
             <div class="rating">
@@ -753,7 +859,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -768,14 +874,20 @@
             </div>
             <div class="content">
                 <h3>Lily Chen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am a math teacher at Penta Elementary. I've been teaching 
+                there since the beggining of my teaching career which only 
+                started a few years ago. For many students math is can be tricky and 
+                frustrating, that is why I focus on teaching my students that they
+                can do anything if they put their mind to it. 
+                </p>
+                 <p><b>One of my favorite quotes are...</b> 'Do not let your 
+                    fire go out, spark by irreplaceable spark in the hopeless 
+                    swamps of the not-quite, the not-yet, and the not-at-all. 
+                    Do not let the hero in your soul perish in lonely frustration 
+                    for the life you deserved and have never been able to reach. 
+                    The world you desire can be won. It exists.. it is real.. 
+                    it is possible.. it's yours.'
+                    - Ayn Rand, Atlas Shrugged </p>
 
             </div>
             <div class="rating">
@@ -785,7 +897,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -800,14 +912,26 @@
             </div>
             <div class="content">
                 <h3>Bill Walker</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>Hey, young boys and girls I am a College Algebra Proffessor
+                    with Clemont Community College and an Algebra II teacher
+                    at Maxwell High School. I try to also teach my students
+                    how to be their own person because not many of these young 
+                    bucks know how to do that nowadays. In my free time I tend 
+                    to go to the golf course with my old buddies.
+                </p>
+                 <p><b>One of my favorite quotes are...</b> 'Don't let the 
+                    expectations and opinions of other people affect your 
+                    decisions. It's your life, not theirs. Do what matters 
+                    most to you; do what makes you feel alive and happy. 
+                    Don't let the expectations and ideas of others limit 
+                    who you are. If you let others tell you who you are, 
+                    you are living their reality — not yours. There is 
+                    more to life than pleasing people. There is much more 
+                    to life than following others' prescribed path. There 
+                    is so much more to life than what you experience right 
+                    now. You need to decide who you are for yourself. 
+                    Become a whole being. Adventure.'
+                    - Roy T. Bennett </p>
 
             </div>
             <div class="rating">
@@ -817,12 +941,12 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 4 -->
+    <!-- teacher 4 used again (James) Math and SAT-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -832,14 +956,28 @@
             </div>
             <div class="content">
                 <h3>James Johnson</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am currently a teacher at Steinfield Middle,
+                    where I teach Pre-Algebra to 7th and 8th graders.
+                    I also help prepare high school students for the PSAT,
+                    the SAT, and the ACT. In my free time I love hanging 
+                    out with mans best friend and relaxing at home.
+                </p>
+                 <p><b>One of my favorite quotes are... </b>'Don't Just
+                    Don't just learn, experience.
+                    Don't just read, absorb.
+                    Don't just change, transform.
+                    Don't just relate, advocate.
+                    Don't just promise, prove.
+                    Don't just criticize, encourage.
+                    Don't just think, ponder.
+                    Don't just take, give.
+                    Don't just see, feel.
+                    Don't just dream, do.
+                    Don't just hear, listen.
+                    Don't just talk, act.
+                    Don't just tell, show.
+                    Don't just exist, live.'
+                    - Roy T. Bennett, The Light in the Heart</p>
 
             </div>
             <div class="rating">
@@ -849,7 +987,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -864,14 +1002,20 @@
             </div>
             <div class="content">
                 <h3>Bailey Evermore</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am a teacher at Whiltshie Elementary, my 3rd grade students prosper
+                    the most at Math. In addition to teaching the kids the content that 
+                    the state tells me to teach, I also teach them three things how to
+                    be patient with their peers, how to do things correctly the easy way
+                    and how to show compassion to their peers who move a littke slower.
+                </p>
+                 <p><b>One of my favorite quotes are...</b>'Simplicity, patience, compassion.
+                    These three are your greatest treasures.
+                    Simple in actions and thoughts, you return to the source of being.
+                    Patient with both friends and enemies,
+                    you accord with the way things are.
+                    Compassionate toward yourself,
+                    you reconcile all beings in the world.'
+                    ― Lao Tzu, Tao Te Ching </p>
 
             </div>
             <div class="rating">
@@ -881,12 +1025,12 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 6 -->
+    <!-- teacher 6 used again (Wilson)-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -896,14 +1040,14 @@
             </div>
             <div class="content">
                 <h3>Shawn Wilson</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
-                 elit. Ab reiciendis vero magnam ratione eaque, laudantium, 
-                 quam dolorem laboriosam quod earum natus labore magni illum 
-                 officiis at alias delectus velit sapiente!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nemo cupiditate beatae, sapiente vitae quibusdam magnam, 
-                 veritatis est a soluta corporis exercitationem at cumque. 
-                 Laboriosam maiores dolore cumque doloremque? </p>
+                <p>I am a Statistic teacher at Chapmen High School. </p>
+                 <p><b>One of my favorite quotes are... </b>'Life should not 
+                    be a journey to the grave with the intention of arriving 
+                    safely in a pretty and well preserved body, but rather to 
+                    skid in broadside in a cloud of smoke, thoroughly used up, 
+                    totally worn out, and loudly proclaiming "Wow! What a Ride!”
+                    - Hunter S. Thompson, The Proud Highway: Saga of a Desperate 
+                    Southern Gentleman, 1955-1967' </p>
 
             </div>
             <div class="rating">
@@ -913,7 +1057,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -946,7 +1090,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -979,12 +1123,12 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 9 -->
+    <!-- teacher 9 used again (Darmel) -->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -1012,12 +1156,12 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
     <hr>
-    <!-- teacher 10 -->
+    <!-- teacher 10 used again {angie}-->
     <section class="about" id="about">
         <div class="row">
             <div class="glowy">
@@ -1045,7 +1189,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1084,7 +1228,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1118,7 +1262,7 @@
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1151,7 +1295,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1183,7 +1327,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1217,7 +1361,7 @@
                 
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1249,7 +1393,7 @@
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1281,7 +1425,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>  
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1314,7 +1458,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1346,7 +1490,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1378,7 +1522,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1417,7 +1561,7 @@
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1450,7 +1594,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1482,7 +1626,7 @@
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1514,7 +1658,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1546,7 +1690,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1578,7 +1722,7 @@
                 <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1610,7 +1754,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1643,7 +1787,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1676,7 +1820,7 @@
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
@@ -1708,7 +1852,7 @@
                 <i class="fa fa-star fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
             </div>
-            <a href="tutorers.html"><button class="plz"><span class="race"></span>Schedule an appointment</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-black plz" id="open"><span class="race"></span>Schedule an appointment</button>
             <a href="tutorers.html"><button class="plz2"><span class="race"></span>Learn More</button></a>
         </div>
     </section>
