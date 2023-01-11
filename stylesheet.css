@@ -234,6 +234,7 @@ ul li{
     height:calc(100% + 4px);
     z-index: 1;
     animation: animate 20s linear infinite;
+    min-width: fit-content;
     }
     .glowy:after{
         filter: blur(20px);
