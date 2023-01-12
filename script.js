@@ -20,8 +20,3 @@ $(document).ready(function(){
         closeModal()
     })
 })
-
-document.getElementById("subscribe").addEventListener("click", () => {
-    document.getElementById("#modal-container").style.display = "none";
-    document.getElementById('html body').style.overflow = "visible"
-});
