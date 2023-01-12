@@ -12,7 +12,6 @@ $(document).ready(function(){
 
     setTimeout(showModal,3000);
 
-    document.getElementById("subscribe").addEventListener("click", closeModal());
 
     $('#close').click(function(){
         closeModal()
@@ -22,3 +21,7 @@ $(document).ready(function(){
     })
 })
 
+document.getElementById("subscribe").addEventListener("click", () => {
+    document.getElementById("#modal-container").style.display = "none";
+    document.getElementById('html body').style.overflow = "visible"
+});
