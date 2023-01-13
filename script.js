@@ -16,7 +16,5 @@ $(document).ready(function(){
     $('#close').click(function(){
         closeModal()
     })
-    $('#subcribe').click(function(){
-        closeModal()
-    })
+    
 })
