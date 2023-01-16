@@ -96,9 +96,10 @@ ul li{
     /* margin: 240px auto 50px; */
     margin-top: 30vh;
     justify-content: center;
-    /* align-content: center; */
+    align-content: center; 
     /* margin-left: 10vw; */
     margin-bottom: 10vh;
+    display:flex;
    
 }
 .container .box{
