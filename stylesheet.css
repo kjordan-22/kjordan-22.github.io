@@ -93,8 +93,8 @@ ul li{
     height: 250px; */
     width:100vw;
     height:90vh;
-    /* margin: 240px auto 50px; */
-    margin-top: 30vh;
+    margin: 50vh auto 50px;
+    /* margin-top: 30vh; */
     justify-content: center;
     align-content: center; 
     /* margin-left: 10vw; */
