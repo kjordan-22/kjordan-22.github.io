@@ -106,7 +106,7 @@ ul li{
     width: calc(300px - 30px);
     height: calc(250px - 30px);
     background: rgb(0, 0, 0);
-    /* float: left; */
+    float: left;
     margin: 15px;
     box-sizing:border-box;
     overflow: hidden;
