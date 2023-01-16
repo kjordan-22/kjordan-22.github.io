@@ -96,6 +96,7 @@ ul li{
     /* margin: 240px auto 50px; */
     margin-top: 30vh;
     justify-content: center;
+    align-content: center;
     /* margin-left: 10vw; */
     margin-bottom: 10vh;
    
@@ -105,7 +106,7 @@ ul li{
     width: calc(300px - 30px);
     height: calc(250px - 30px);
     background: rgb(0, 0, 0);
-    float: left;
+    /* float: left; */
     margin: 15px;
     box-sizing:border-box;
     overflow: hidden;
