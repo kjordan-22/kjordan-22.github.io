@@ -112,6 +112,7 @@ ul li{
     overflow: hidden;
     border-radius: 10px;
     justify-content: center;
+    align-content: center;
 }
 .container .box .icon{
     position: absolute;
