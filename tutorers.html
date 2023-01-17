@@ -84,8 +84,48 @@
                  /* background:linear-gradient(#ff6ef3,#6ee2ff,#b73bff) */
                  overflow-x: hidden;
             }
+            header{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100vw;
+                padding:30px 100px;
+                display:flex;
+                justify-content: space-between;
+                align-items:center;
+                z-index: 10000;
+            }
+            header .logo{
+            color:#fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size:2em;
+            text-transform: uppercase;
+            }
+            header ul{
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                background: rgba(0,0,0,0);
+                transition:1s;
+            }
+            header ul li{
+                list-style: none;
+                margin-left: 20px;
+            }
+            header ul li a{
+                text-decoration: none;
+                padding:6px 15px;
+                color:#fff;
+                border-radius: 20px;
+            }
+            header ul li a:hover,
+            header ul li a.active{
+                background:#fff;
+                color:#2b1055;
+            }
     
-           header{
+           /* header{
                 position:absolute;
                 top:0;
                 left:0;
@@ -96,8 +136,8 @@
                 align-items:center;
                 z-index: 10000;
                 /* overflow: hidden; */
-            }
-            header ul{
+            
+            /* header ul{
                 display:flex;
                 justify-content: center;
                 align-content: center;
@@ -116,12 +156,12 @@
             header ul li a.active{
                 background:#fff;
                 color:#2b1055;
-            }
-            .frlogo{
+            }  */
+            /* .frlogo{
                 float:left;
                 height:10%;
                 width:10%;
-            }
+            } */
             .plz{ 
                 position:relative;
                 width:300px;
