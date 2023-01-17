@@ -99,7 +99,8 @@ ul li{
     align-content: center; 
     /* margin-left: 10vw; */
     /* margin-bottom: 10vh; */
-    display:flex;
+    /* display:flex; */
+    /* displayflex makes it centered but cuts of boxes on smaller screens */
    
 }
 .container .box{
