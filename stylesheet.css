@@ -96,7 +96,8 @@ ul li{
     margin: 5vh auto 50px; */
     /* margin-top: 30vh; */
     justify-content: center;
-    align-content: center; 
+    align-content: center;
+    flex-wrap: wrap;
     /* margin-left: 10vw; */
     /* margin-bottom: 10vh; */
     display:flex;
